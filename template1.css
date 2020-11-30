@@ -2,7 +2,9 @@
 @import "https://fonts.googleapis.com/css?family=Raleway:900,800,700,600,400,300,200,100";
 @import "https://fonts.googleapis.com/css?family=Josefin+Sans:700,600,400";
 
-body{height:100%;overflow-y:scroll;
+body{
+    height:100%;
+    overflow-y:scroll;
     -webkit-overflow-scrolling:touch
 }
 
@@ -531,7 +533,7 @@ fieldset[disabled] .btn-default.active{
 }
 
 .footer{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), 
                 url(./img/footer1.jpg) 
                 no-repeat center center;
     -webkit-background-size:cover;
@@ -681,7 +683,7 @@ fieldset[disabled] .btn-default.active{
     position:relative;
     height:100vh;
     width:100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), 
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), 
                 url(./img/home1.jpg) 
                 no-repeat center center;
     filter: darken;
@@ -758,7 +760,7 @@ fieldset[disabled] .btn-default.active{
 }
 
 .special{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ),
                 url(./img/special1.jpg) 
                 no-repeat center center;
     -webkit-background-size:cover;
