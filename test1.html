@@ -11,7 +11,12 @@
     <!-- <link rel="stylesheet" href="template1.css"> -->
     <link rel="stylesheet" href="test.css">
 
-    <title>Hello, world!</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="js/functionality.js"></script>
+    <!-- <script src="js/functionalitytest.js"></script> -->
+
+    <title>test1</title>
   </head>
   <body>
 
@@ -38,12 +43,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="page-header wow fadeInDown">
+            <div class="page-header">
               <h1>the restaurant<small>A little about us and a brief history of how we started.</small></h1>
             </div>
           </div>
         </div>
-        <div class="row wow fadeInUp">
+        <div class="row">
           <div class="col-md-4">
             <div class="container-fluid">
               <div class="row">
@@ -83,13 +88,12 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="page-header wow fadeInDown">
+            <div class="page-header">
               <h1 class="white">today's specials<small>A little about us and a brief history of how we started.</small></h1>
             </div>
           </div>
         </div>
-
-        <div class="row wow fadeInUp">
+        <div class="row">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner white-space">
                 <div class="carousel-item active">
@@ -121,13 +125,13 @@
                     <div class="col-sm">
                       <div class="special-carousel-description">
                         <div class="page-header">
-                          <h1>2 Alfraedo Crab-Penne Pasta Bowl<small>A home-made, smoked, beef-patty burger with an egg on top. Satisfying the cravings of the most ambitious burger-lovers, this delicacy has been one of our signature dishes for many, many years.</small></h1>
+                          <h1>2 Alfredo Crab-Penne Pasta Bowl<small>Sweet crabmeat in a creamy garlic Alfredo sauce, mixed together with a bed of penne pasta. This single bowl will instantly satisfy all of your creamy cravings of the week.</small></h1>
                         </div>
                         <p>
-                          Comes with a side of fries/potato wedges/mashed potatoes, coleslaw/macaroni salad and a drink of your choice!
+                          Ingredients: Crab meat, penne pasta, spinach, garlic, onion, butter, cream, milk, parsley, etc.
                         </p>
                         <p>
-                          Ingredients: Whole wheat/White buns, eggs, beef-patty, smoked-bacon, onions, lettuce, pickles, mustard, ketchup, etc.
+                          ** This dish contains undercooked ingredients. If you have certain medical conditions or preferences, please add a request for the ingredients to be well-done **
                         </p>
                       </div>
                     </div>
@@ -141,13 +145,13 @@
                     <div class="col-sm">
                       <div class="special-carousel-description">
                         <div class="page-header">
-                          <h1>1 Signature Smoke-Burger<small>A home-made, smoked, beef-patty burger with an egg on top. Satisfying the cravings of the most ambitious burger-lovers, this delicacy has been one of our signature dishes for many, many years.</small></h1>
+                          <h1>3 Shrimp Parmesan Linguini Pasta<small>A fresh, garlic parmesan linguini pasta, with jumbo shrimps, for that extra soft, popping texture. For anyone looking for a light, fresh meal, this dish is the perfect choice.</small></h1>
                         </div>
                         <p>
-                          Comes with a side of fries/potato wedges/mashed potatoes, coleslaw/macaroni salad and a drink of your choice!
+                          Ingredients: A choice of Shrimp/Chicken, linguini pasta, garlic, parmesan cheese, celery, spinach, salad greens, etc.
                         </p>
                         <p>
-                          Ingredients: Whole wheat/White buns, eggs, beef-patty, smoked-bacon, onions, lettuce, pickles, mustard, ketchup, etc.
+                          ** This dish contains undercooked ingredients. If you have certain medical conditions or preferences, please add a request for the ingredients to be well-done **
                         </p>
                       </div>
                     </div>
@@ -161,13 +165,13 @@
                     <div class="col-sm">
                       <div class="special-carousel-description">
                         <div class="page-header">
-                          <h1>1 Signature Smoke-Burger<small>A home-made, smoked, beef-patty burger with an egg on top. Satisfying the cravings of the most ambitious burger-lovers, this delicacy has been one of our signature dishes for many, many years.</small></h1>
+                          <h1>4 Mama's Fudgy Cocoa Brownies<small>A home-made, deep, chocolate fudge brownie to top off your well-deserved meal. This sweet delicacy is our local favourite dessert, unlike any other brownie elsewhere.</small></h1>
                         </div>
                         <p>
-                          Comes with a side of fries/potato wedges/mashed potatoes, coleslaw/macaroni salad and a drink of your choice!
+                          Pure. Chocolate. Heaven.
                         </p>
                         <p>
-                          Ingredients: Whole wheat/White buns, eggs, beef-patty, smoked-bacon, onions, lettuce, pickles, mustard, ketchup, etc.
+                          Ingredients: Cocoa chocolate. The rest is a secret!
                         </p>
                       </div>
                     </div>
@@ -184,7 +188,6 @@
               </a>
             </div>
         </div>
-        
       </div>
     </section>
 
@@ -193,21 +196,35 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <div class="page-header wow fadeInDown">
+            <div class="page-header">
               <h1>Our menu<small>These fine folks trusted the award winning restaurant.</small></h1>
             </div>
           </div>
         </div>
-        <div class="food-menu wow fadeInUp">
+        <div class="food-menu">
           <div class="row">
             <div class="col-md-12">
               <div class="menu-tags">
-                <span data-filter="*" class="tagsort-active">All</span>
+                <!-- <span data-filter="*" class="tagsort-active">All</span>
                 <span data-filter=".starter">starters</span>
                 <span data-filter=".breakfast">breakfast</span>
                 <span data-filter=".lunch">lunch</span>
                 <span data-filter=".dinner">dinner</span>
-                <span data-filter=".desserts">desserts</span>
+                <span data-filter=".desserts">desserts</span> -->
+
+                <!-- <span data-filter="all" class="menu_category tagsort-active">All</span>
+                <span data-filter="starter" class="menu_category">starters</span>
+                <span data-filter="breakfast" class="menu_category">breakfast</span>
+                <span data-filter="lunch" class="menu_category">lunch</span>
+                <span data-filter="dinner" class="menu_category">dinner</span>
+                <span data-filter="desserts" class="menu_category">desserts</span> -->
+
+                <span class="menu_category tagsort-active" id="all">All</span>
+                <span class="menu_category" id="starter">starters</span>
+                <span class="menu_category" id="breakfast">breakfast</span>
+                <span class="menu_category" id="lunch">lunch</span>
+                <span class="menu_category" id="dinner">dinner</span>
+                <span class="menu_category" id="desserts">desserts</span>
               </div>
             </div>
           </div>

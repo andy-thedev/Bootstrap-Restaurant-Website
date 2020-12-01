@@ -190,18 +190,18 @@ p{
 }
 
 .special-carousel-description .page-header h1 {
-    margin-top: 4rem;
+    margin-top: 5rem;
     text-align: left;
 }
 
 .special-carousel-description .page-header h1 small{
     text-align: left;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .special-carousel-description p{
     text-align: left;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .white-space {
@@ -239,11 +239,26 @@ p{
     color:#4b4741
 }
 
+.menu-items {
+    min-height: 12rem;
+}
+
 .menu .food-menu .menu-item{
-    overflow:hidden;
     margin:15px 0;
     padding-left:10px;
-    border-left:3px solid #fff
+    border-left:3px solid #fff;
+    transition: all 0.4s ease-in-out;
+}
+
+.hide {
+    position: absolute;
+    visibility: hidden;
+    opacity:0;
+    max-height: 0;
+    overflow:hidden;
+    width: 0;
+    padding: 0;
+    transition: all 0.4s ease-in-out;
 }
 
 .menu .dotted-bg{
@@ -255,7 +270,7 @@ p{
     z-index:-1
 }
 
-.menu .food-menu .menu-item .menu-wrapper,.menu .food-menu .menu-item3 .menu-wrapper{
+.menu .food-menu .menu-item .menu-wrapper,.menu .food-menu .menu-wrapper{
     position:relative;
     z-index:1
 }
@@ -417,21 +432,11 @@ p{
 
 @media(max-width: 1279px){
     .special-carousel-description .page-header h1 {
-        margin-top: 2rem;
+        margin-top: 3rem;
         text-align: left;
     }
     .special-carousel-description .page-header:after{
         margin: 0.5rem 0;
-    }
-}
-
-@media(max-width:992px){
-    .list{
-        padding-left:0;
-        margin-bottom:0
-    }
-    .menu .food-menu .menu-item3 h4{
-        font-size:14px
     }
 }
 
@@ -478,6 +483,10 @@ p{
     }
     .special-carousel-description .page-header:after{
         margin: 0.5rem 0;
+    }
+
+    .special-carousel-description p{
+        padding-bottom: 1rem;
     }
 
     .menu .food-menu .price{
