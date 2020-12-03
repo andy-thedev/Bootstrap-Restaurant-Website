@@ -14,11 +14,31 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <script src="js/functionality.js"></script>
-    <!-- <script src="js/functionalitytest.js"></script> -->
 
     <title>test1</title>
   </head>
   <body>
+
+    <!-- Home Section -->
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <div class="container navbar-wrapper">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-hamburger"></i>
+        RESTAURANT
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#menu">Menu <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#specials">Specials</a>
+          <a class="nav-item nav-link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 
     <!-- Home Section -->
     <section class="home">
@@ -28,8 +48,8 @@
             <img src="img/logo.png" alt="logo">
             </a>
           </div>
-          <h1>DELICIOUS Food</h1>
-          <h2>Tomato is a delitious restaurant website template</h2>
+          <h1>DELICIOUS FOOD</h1>
+          <h2>Yes, I made this :)</h2>
         </div>
         <div class="scroll-down hidden-xs">
         <a href="#about">
@@ -84,12 +104,12 @@
     </section>
 
     <!-- Specials Section -->
-    <section class="special">
+    <section class="special" id="specials">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-header">
-              <h1 class="white">today's specials<small>A little about us and a brief history of how we started.</small></h1>
+              <h1 class="white">house specials<small>Having trouble deciding? Here are our most beloved-dishes.</small></h1>
             </div>
           </div>
         </div>
@@ -192,12 +212,12 @@
     </section>
 
     <!-- Menu Section -->
-    <section class="menu">
+    <section class="menu" id="menu">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
             <div class="page-header">
-              <h1>Our menu<small>These fine folks trusted the award winning restaurant.</small></h1>
+              <h1>Our menu<small>Our trusted selections of local favourites since 1999.</small></h1>
             </div>
           </div>
         </div>
@@ -205,20 +225,6 @@
           <div class="row">
             <div class="col-md-12">
               <div class="menu-tags">
-                <!-- <span data-filter="*" class="tagsort-active">All</span>
-                <span data-filter=".starter">starters</span>
-                <span data-filter=".breakfast">breakfast</span>
-                <span data-filter=".lunch">lunch</span>
-                <span data-filter=".dinner">dinner</span>
-                <span data-filter=".desserts">desserts</span> -->
-
-                <!-- <span data-filter="all" class="menu_category tagsort-active">All</span>
-                <span data-filter="starter" class="menu_category">starters</span>
-                <span data-filter="breakfast" class="menu_category">breakfast</span>
-                <span data-filter="lunch" class="menu_category">lunch</span>
-                <span data-filter="dinner" class="menu_category">dinner</span>
-                <span data-filter="desserts" class="menu_category">desserts</span> -->
-
                 <span class="menu_category tagsort-active" id="all">All</span>
                 <span class="menu_category" id="starter">starters</span>
                 <span class="menu_category" id="breakfast">breakfast</span>
@@ -229,82 +235,82 @@
             </div>
           </div>
           <div class="row menu-items">
-            <div class="menu-item col-sm-6 col-xs-12 starter dinner desserts">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
-            <div class="menu-item col-sm-6 col-xs-12 starter">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
-            <div class="menu-item col-sm-6 col-xs-12 breakfast desserts starter">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
             <div class="menu-item col-sm-6 col-xs-12 breakfast">
               <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
-            <div class="menu-item col-sm-6 col-xs-12 lunch starter breakfast">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
-            <div class="menu-item col-sm-6 col-xs-12 lunch">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
-            <div class="menu-item col-sm-6 col-xs-12 dinner breakfast lunch">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
-            <div class="menu-item col-sm-6 col-xs-12 dinner">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
-                <div class="dotted-bg"></div>
-              </div>
-              <p>pellentesque enim. Aliquam tempor</p>
-            </div>
-            <div class="menu-item col-sm-6 col-xs-12 desserts lunch dinner">
-              <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
-                <span class="price">$14.95</span>
+                <h4>Strawberry Pancakes</h4>
+                <span class="price">$8.95</span>
                 <div class="dotted-bg"></div>
               </div>
               <p>pellentesque enim. Aliquam tempor</p>
             </div>
             <div class="menu-item col-sm-6 col-xs-12 desserts">
               <div class="clearfix menu-wrapper">
-                <h4>English asparagus</h4>
+                <h4>Mama's Fudgy Cocoa Brownies</h4>
+                <span class="price">$8.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 starter breakfast">
+              <div class="clearfix menu-wrapper">
+                <h4>English Stuffed Waffles</h4>
+                <span class="price">$9.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 breakfast lunch starter">
+              <div class="clearfix menu-wrapper">
+                <h4>Eggs Benedict Royale</h4>
+                <span class="price">$11.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 lunch dinner">
+              <div class="clearfix menu-wrapper">
+                <h4>House-Special Poutine</h4>
+                <span class="price">$12.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 lunch dinner">
+              <div class="clearfix menu-wrapper">
+                <h4>Signature Smoke-Burger</h4>
                 <span class="price">$14.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 lunch dinner">
+              <div class="clearfix menu-wrapper">
+                <h4>Spaghetti & Meatball</h4>
+                <span class="price">$17.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 breakfast lunch dinner">
+              <div class="clearfix menu-wrapper">
+                <h4>Alfredo Crab-Penne Pasta Bowl</h4>
+                <span class="price">$18.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 breakfast lunch dinner">
+              <div class="clearfix menu-wrapper">
+                <h4>Shrimp Parmesan Linguini Pasta</h4>
+                <span class="price">$19.95</span>
+                <div class="dotted-bg"></div>
+              </div>
+              <p>pellentesque enim. Aliquam tempor</p>
+            </div>
+            <div class="menu-item col-sm-6 col-xs-12 lunch dinner">
+              <div class="clearfix menu-wrapper">
+                <h4>Margherita Pizza</h4>
+                <span class="price">$17.75</span>
                 <div class="dotted-bg"></div>
               </div>
               <p>pellentesque enim. Aliquam tempor</p>
@@ -321,7 +327,7 @@
       </div>
     </section>
 
-    <section class="footer">
+    <section class="footer" id="contact">
       <div class="container">
         <div class="row">
           <div class="col-md-4 col-sm-12">

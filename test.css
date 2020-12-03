@@ -3,6 +3,11 @@
 
 /* Global Settings */
 
+html {
+    /*for smooth scrolling, when redirected to different parts of the page via ie: a button*/
+    scroll-behavior: smooth;
+}
+
 body{
     height:100%;
     overflow-y:scroll;
@@ -88,6 +93,58 @@ p{
 .btn-lg{
     font-weight:700;
     padding:15px 40px
+}
+
+/* Navbar */
+
+.navbar-wrapper {
+    min-width: 65%;
+}
+
+.navbar{
+    /* background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) ); */
+    background-color: rgb(2 1 0 / 0.1);
+    height: 7%;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.scrolled {
+    /* background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ); */
+    background-color: rgb(2 1 0 / 0.9);
+    transition: background-color 0.4s ease-in-out;
+}
+
+.navbar-toggler {
+    background: transparent;
+    border: none;
+}
+
+.navbar-brand {
+    font-family:josefin sans,sans-serif;
+    text-transform:uppercase;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.navbar-brand>i{
+    font-size: 30px;
+    padding: 0.5rem;
+}
+
+.nav-item {
+    text-align: right;
+}
+
+.nav-link {
+    margin: 0 1rem;
+    color: #fff!important;
+    font-family:josefin sans,sans-serif;
+    text-transform:uppercase;
+    font-size: 13px;
+}
+
+.nav-link:hover{
+    color: #f9c56a!important;
 }
 
 /* Home Section */
@@ -256,8 +313,6 @@ p{
     opacity:0;
     max-height: 0;
     overflow:hidden;
-    width: 0;
-    padding: 0;
     transition: all 0.4s ease-in-out;
 }
 
