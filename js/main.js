@@ -1,3 +1,5 @@
+new WOW().init();
+
 $(document).ready(
     function(){
         $('.menu_category').click(function(){
@@ -23,6 +25,18 @@ $(document).ready(
                 $('.navbar').addClass('scrolled');
             } else{
                 $('.navbar').removeClass('scrolled');
+            }
+        });
+
+        $('.navbar-toggler').click(function(){
+            var openNav = $( ".collapse" ).is( ":hidden" );
+            var closeNav = $( ".collapse" ).is( ":visible" );
+
+            if (closeNav) {
+                $('.navbar-nav').removeClass('navbar-nav-open').removeClass('scrolled');
+            }
+            if (openNav) {
+                $('.navbar-nav').addClass('navbar-nav-open').addClass('scrolled');
             }
         });
 });
