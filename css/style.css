@@ -1,7 +1,18 @@
-@import "https://fonts.googleapis.com/css?family=Raleway:900,800,700,600,400,300,200,100";
-@import "https://fonts.googleapis.com/css?family=Josefin+Sans:700,600,400";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;400;100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
 
 /* Global Settings */
+
+:root {
+    /*font family*/
+    --ff-primary: 'Lato', sans-serif;
+    --ff-secondary: 'Open Sans', sans-serif;
+
+    /*font weight*/
+    --fw-primary: 700;
+    --fw-secondary: 100;
+}
 
 html {
     /*for smooth scrolling, when redirected to different parts of the page via ie: a button*/
@@ -19,11 +30,12 @@ body::-webkit-scrollbar {
 }
 
 h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
-    font-family:raleway,sans-serif;
+    /* font-family:raleway,sans-serif; */
+    font-family: var(--ff-primary);
     text-transform:uppercase;
     color:#4b4741;
     text-align:center;
-    font-weight:800
+    font-weight: var(--fw-primary);
 }
 
 .break-when {
@@ -33,7 +45,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 .page-header{
     /* Section titles */
     border:none;
-    margin:80px 0 40px
+    margin:80px 0 40px;
 }
 
 .page-header:after{
@@ -43,15 +55,15 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
     position:relative;
     height:3px;
     width:113px;
-    background-color:#f9c56a;
+    background-color:#FFD462;
     margin:0 auto
 }
 
 .small,small{
     /* Section title descriptions */
-    font-family:josefin sans,sans-serif;
+    font-family: var(--ff-secondary);
     font-size: 60%;
-    font-weight:400;
+    font-weight: var(--fw-secondary);
     color: #777;
     display:block!important;
     text-transform:none;
@@ -61,7 +73,7 @@ h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{
 
 p{
     /* Paragraph content in sections */
-    font-family:josefin sans,sans-serif;
+    font-family: var(--ff-secondary);
     color:#828281;
     font-size:22px
 }
@@ -82,23 +94,23 @@ p{
 .btn{
     border-radius:0;
     border:none;
-    font-family:raleway,sans-serif;
+    font-family: var(--ff-primary);
     text-transform:uppercase;
     letter-spacing:1px;
-    font-weight:700;
+    font-weight: var(--fw-primary);
     padding:10px 15px
 }
 
 .btn-default{
-    background-color:#f9c56a
+    background-color:#FFD462
 }
 
 .btn-default:hover{
-    background-color:#f7b239
+    background-color:#FFD462
 }
 
 .btn-lg{
-    font-weight:700;
+    font-weight: var(--fw-primary);
     padding:15px 40px
 }
 
@@ -131,10 +143,10 @@ p{
 }
 
 .navbar-brand {
-    font-family:josefin sans,sans-serif;
+    font-family: var(--ff-secondary);
     text-transform:uppercase;
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: var(--fw-secondary);
 }
 
 .navbar-brand>i{
@@ -149,13 +161,13 @@ p{
 .nav-link {
     margin: 0 1rem;
     color: #fff!important;
-    font-family:josefin sans,sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     text-transform:uppercase;
     font-size: 13px;
 }
 
 .nav-link:hover{
-    color: #f9c56a!important;
+    color: #FFD462!important;
 }
 
 /* Home Section */
@@ -192,9 +204,9 @@ p{
 
 .home .title-block h2{
     text-transform:none;
-    font-weight:400;
+    font-weight: var(--fw-secondary);
     color:#e6e6e6;
-    font-size:36px
+    font-size:36px;
 }
 
 .home .scroll-down{
@@ -293,10 +305,10 @@ p{
 }
 
 .menu-tags span{
-    font-family:raleway,sans-serif;
+    font-family: var(--ff-secondary);
     font-size:18px;
     color:#828281;
-    font-weight:700;
+    font-weight: var(--fw-primary);
     text-transform:uppercase;
     margin:0 20px;
     padding-bottom:2px;
@@ -307,7 +319,7 @@ p{
 }
 
 .menu-tags .tagsort-active{
-    border-bottom:3px solid #f9c56a;
+    border-bottom:3px solid #FFD462;
     color:#4b4741
 }
 
@@ -368,9 +380,9 @@ p{
     line-height:19.8px;
     margin:5px 0;
     background:#fff none repeat scroll 0% 0%;
-    font-family:Josefin Sans;
+    font-family: var(--ff-secondary);
     font-size:22px;
-    font-weight:700
+    font-weight: var(--fw-primary);
 }
 
 .menu .food-menu .menu-btn{
@@ -381,6 +393,7 @@ p{
 /* Footer Section */
 
 .footer{
+    position: relative;
     background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), 
                 url(../img/footer1.jpg) 
                 no-repeat center center;
@@ -399,7 +412,7 @@ p{
 }
 
 .footer h1{
-    color:#f9c56a;
+    color:#FFD462;
     font-size:18px;
     text-align:left;
     margin:60px 0 26px
@@ -421,7 +434,7 @@ p{
 }
 
 .footer a{
-    color:#f9c56a;
+    color:#FFD462;
     text-decoration:none
 }
 
@@ -438,19 +451,19 @@ p{
 }
 
 .footer .footer-post .footer-post-text{
-    font-weight:700;
+    font-weight: var(--fw-primary);
     font-size:17px;
     margin-top:-4px!important
 }
 
 .footer .footer-post .footer-post-text:hover{
-    color:#f9c56a
+    color:#FFD462
 }
 
 .footer .footer-post .footer-post-date{
     font-size:14px;
     color:#828281;
-    font-weight:700;
+    font-weight: var(--fw-primary);
     margin:0
 }
 
@@ -475,13 +488,13 @@ p{
 }
 
 .footer .footer-social-icons a:hover{
-    background:#f9c56a;
+    background:#FFD462;
     color:#343434
 }
     
 .footer-address .fa{
     margin-right:10px;
-    color:#f9c56a;
+    color:#FFD462;
     width:18px;
     text-align:center
 }
@@ -613,7 +626,7 @@ p{
         font-size:15px
     }
     .footer{
-        font-family:Josefin Sans
+        font-family:var(--ff-secondary);
     }
     .footer .footer-post .footer-post-text{
         margin-top:-15px
