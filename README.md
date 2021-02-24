@@ -1,4 +1,6 @@
 # Bootstrap-Restaurant-Website
+**Visual demonstrations** and **further explanation** may be seen at https://www.wontaejungportfolio.com/mywork
+
 A website template for restaurants utilizing bootstrap, html, and css
 
 Front-end: HTML, CSS, JavaScript, jQuery
