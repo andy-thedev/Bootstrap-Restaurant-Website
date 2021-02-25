@@ -194,7 +194,7 @@ p{
 }
 
 .home .title-block .logo{
-    text-align:center
+    text-align: center;
 }
 
 .home .title-block h1{
@@ -581,6 +581,11 @@ p{
 
     .home .title-block h1{
         font-size:36px
+    }
+
+    .home .title-block .brand-logo {
+        width: 75%;
+        height: 75%;
     }
 
     .navbar {
